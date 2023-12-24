@@ -1,0 +1,246 @@
+
+        body {
+            color: aliceblue;
+            margin: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(9, 29, 23);
+            
+            background-image: url(images/background.png);
+            overflow: hidden;
+            
+        }
+
+        button {
+            border-radius: 9999px;
+            border: none;
+            height: 3rem;
+            width: 3rem;
+            cursor:pointer;
+        }
+
+        /* button:hover {
+            background-color: gray;
+        } */
+
+        /* nav section style */
+
+        #nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            gap: 1rem;
+
+        }
+
+        #nav a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        #nav a:hover {
+            text-decoration: underline;
+        }
+
+        #hover-text {
+            position: absolute;
+            right: 1.5rem;
+            background-color: rgb(64, 64, 64);
+            padding: 5px;
+            margin-top: 10px;
+            display: none;
+            font-size: small;
+            border-radius: 5px;
+
+
+        }
+        #account img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 4rem;
+            height: 2.8rem;
+            margin-left: -13px;
+        }
+
+        #account:hover+#hover-text {
+            display: block;
+            
+            
+        }
+
+        #google-apps {
+            position: absolute;
+            right: 4.5rem;
+            background-color: rgb(62, 62, 62);
+            padding: 5px;
+            margin-top: 10px;
+            display: none;
+            font-size: small;
+            border-radius: 5px;
+
+
+        }
+
+        #apps-but:hover+#google-apps {
+            display: block;
+        }
+
+        #apps-id img{
+            width: 1rem;
+            
+        }
+        
+
+
+
+
+
+
+
+
+        /* header section style */
+
+
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        #google {
+            font-size: 6rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-bottom: 2rem;
+
+        }
+
+        #input-div{
+        }
+        #search img{
+            width: 1.2rem;
+            position: absolute;
+            margin-top: -2.1rem;
+            margin-left: -19rem;
+
+            
+        }
+
+
+
+        input{
+            
+            height: 3rem;
+            width: 40rem;
+            border-radius: 5rem;
+            font-size: large;
+            padding: 1rem;
+            padding-left: 3rem;
+            border: none;
+            
+        }
+
+
+
+
+
+        /* main part style */
+        .button{
+            width: 5.5rem;
+            height: 7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3px;
+        }
+        .button:hover{
+            
+            cursor: pointer;
+            background-color: rgb(79, 78, 78);
+            opacity: 80%;
+            border-radius: 10px;
+            
+            
+            
+
+        }
+        .button img{
+            height: 2rem;
+            
+        }
+        #button-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 2rem;
+            gap: 1rem;
+
+        }
+        #gmail img{
+            width: 2rem;
+            height: 1.5rem;
+        }
+        
+
+
+
+
+
+
+
+        @media only screen and (max-width: 600px) {
+            #button-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+
+        input{
+            
+            height: 2rem;
+            width: 20rem;
+            padding-left: 5px;
+        }
+
+        #google {
+            font-size: 4rem;
+        }
+        #search {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 380px){
+        body{
+            margin: 2rem;
+        }
+
+        #button-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+        }
+        input{
+            
+            
+            width: 18rem;
+            
+        }
+        #bicroy{
+            display: none;
+        }
+        #search {
+            display: none;
+        }
+    }
+    
